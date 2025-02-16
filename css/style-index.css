@@ -9,14 +9,21 @@
     color: white;
     display: flex;
     height: 100px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
+.logo {
+    position: relative;
+    display: inline-block;
+}
+
 .pages {
     display: flex;
-    flex-direction: row;
+    cursor: pointer;
+    padding: 20px;
+    margin-right: 35%;
 }
 
 .pages a {
@@ -30,8 +37,41 @@
     padding: 20px;
 }
 
+.container {
+    position: fixed;
+    display: flex;
+    height: 100%;
+    width: 250px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    
+}
+
+.container li {
+    list-style: none;
+    padding: 20px;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar i {
+    display: none;
+}
+
+
+
 @media(max-width: 437px) {
     .pages {
         display: none;
+    }
+    
+    .navbar i {
+        display: flex;
     }
 }
